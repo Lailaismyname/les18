@@ -140,16 +140,16 @@ landscape mode is lelijk bij bijna allemaal. Dus die moet je nog fixen dan.
 /*landscape mode*/
 @media only screen and (orientation: landscape) and (max-width: 993px){
     .linkerdeel{
-       width: 30%;
+       width: 50%;
        font-size: small;
     }
     .rechterdeel{
-        width: 70%;
-        font-size:1em;
+        width: 50%;
+        font-size:small;
     }
     .img_activiteiten{
         height:10em;
-        font-size:1em;
+        font-size:small;
     }
 }
 
