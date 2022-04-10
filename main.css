@@ -50,7 +50,7 @@ header{
     width: 30%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: small;
+    font-size: x-small;
 }
 
 .rechterdeel{
@@ -59,6 +59,7 @@ header{
     width: 70%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
+    font-size: small;
 }
 
 footer{
