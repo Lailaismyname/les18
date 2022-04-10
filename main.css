@@ -86,7 +86,7 @@ footer{
     background-image: url(img/spaarnwouderpoort_kont.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    position: fixed;
+    position: static;
     bottom:0px;
     width:100%;
     background-size: cover;
