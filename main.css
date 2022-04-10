@@ -44,13 +44,18 @@ h2{
     display:block;
     
 }
+.feitjes{
+    padding: 2em;
+    list-style-type: none;
+    line-height: 2em;
+}
 .linkerdeel{
     background-color: #295D92;
     float: left;
     width: 40%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 3vw;
+    font-size: 2.5vw;
     word-wrap:break-word;
 }
 .rechterdeel{
@@ -59,7 +64,7 @@ h2{
     width: 60%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: center;
     word-wrap: break-word;
 }
@@ -75,25 +80,69 @@ footer{
     background-repeat: no-repeat;
     position:relative;
     background-size: cover;
+    text-align: center;
 }
 .img_activiteiten{
     padding: 1em;
     height:10em;
     float: right;
+    border-radius: 15%;
+}
+/*grotere smartphones*/
+@media only screen and (min-width: 600px){
+    .linkerdeel{
+        font-size: medium;
+    }
+    .rechterdeel{
+        font-size: medium;
+    }
+}
+/*tablets e.d*/
+@media only screen and (min-width: 768px)
+{
+    .linkerdeel{
+        font-size: large;
+    }
+    .rechterdeel{
+        font-size: large;
+    }
+    .img_activiteiten{
+        height: 13em;
+    }
+}
+/*landscape mode*/
+@media only screen and (orientation: landscape) and (max-width: 993px){
+    .linkerdeel{
+       width: 30%;
+       font-size: small;
+    }
+    .rechterdeel{
+        width: 70%;
+        font-size:small;
+    }
+    .img_activiteiten{
+        height:10em;
+    }
 }
 
-
-
-/* mediaquery's bijbehorende algemene breekpunten:
-kleine smartphones: @media only screen and (max-width: 600px;)
-grote smartphones: @media only screen and (min-width: 600px;)
-tablets e.d.: @media only screenm and (min-width: 768px;)
-laptops/desktop: @media only screen and (min-width: 992px;)
-grote apparaten: @media only screen and (min-width: 1200px;)
-*/
-
-/*Notes to self. je moet die overflow fixen. 
-media queries toevoegen voor grotere formaat schermen. 
-andere kleuren combinatie, want deze shit is lelijk.
-je html door die validator halen!!! serieus niet vergeten!
-footer maken, ff googlen om te kijken wat er normaal in een footer staat. 
+/*laptop/desktop*/
+@media only screen and (min-width: 993px){
+    .linkerdeel{
+        width: 40%;
+    }
+    .rechterdeel{
+        width: 60%;
+    }
+    .img_activiteiten{
+        height:15em;
+    }
+}
+/*grote apparaten*/
+@media only screen and (min-width: 1200px){
+    .linkerdeel{
+        font-size:larger;
+    }
+    .rechterdeel{
+        font-size: larger;
+    }
+}
