@@ -17,14 +17,14 @@
     font-family: 'Ubuntu Mono', monospace;
 */
 *{
-    color:#F4E6D8;
     margin: 0px;
     padding: 0px;
-    }
+}
 body{
     background-color: #F4E6D8;
 }
 header{
+    color:#FBF6F1;
     height: 3.5em;
     background-image: url(img/spaarnwouderpoort.jpg);
     background-position: center;
@@ -42,7 +42,6 @@ h2{
 }
 .wikkel{
     display:block;
-    
 }
 .feitjes{
     padding: 2em;
@@ -50,21 +49,29 @@ h2{
     line-height: 2em;
 }
 .linkerdeel{
-    background-color: #295D92;
+    background-color: #E7C8A9;
+    color:#553718;
     float: left;
     width: 40%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 2.5vw;
+    font-size: 60%;
     word-wrap:break-word;
 }
+    #hofjes{
+    height: 50%;
+    }
+    #vdpigge{
+    height:50%;
+    }
 .rechterdeel{
-    background-color: #3474B7;
+    background-color: #F1DFCD;
+    color:#553718;
     float: right;
     width: 60%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 2.5vw;
+    font-size: 60%;
     text-align: center;
     word-wrap: break-word;
 }
@@ -72,13 +79,16 @@ h2{
 footer{
     height: 3.5em;
     background-color:#1A3B5D;
+    color:#FBF6F1;
     font-family: 'Maven Pro', sans-serif;
     clear: both;
     text-shadow: 2px 2px #333;
     background-image: url(img/spaarnwouderpoort_kont.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    position:relative;
+    position: fixed;
+    bottom:0px;
+    width:100%;
     background-size: cover;
     text-align: center;
 }
@@ -88,68 +98,18 @@ footer{
     float: right;
     border-radius: 15%;
 }
-/*grotere smartphones*/
-@media only screen and (min-width: 600px){
-    .linkerdeel{
-        font-size: small;
-    }
-    .rechterdeel{
-        font-size: medium;
-    }
-}
-/*tablets e.d*/
-@media only screen and (min-width: 768px)
-{
-    .linkerdeel{
-        font-size: medium;
-    }
-    .rechterdeel{
-        font-size: large;
-    }
+
+@media only screen and (min-width: 992px){
     .img_activiteiten{
-        height: 13em;
+        height: 50%;
     }
-}
-/*laptop/desktop*/
-@media only screen and (min-width: 993px){
-    .linkerdeel{
-        width: 40%;
-    }
-    .rechterdeel{
-        width: 60%;
-    }
-    .img_activiteiten{
-        height:15em;
-    }
-}
-/*grote apparaten*/
-@media only screen and (min-width: 1200px){
-    .linkerdeel{
-        font-size:larger;
-    }
-    .rechterdeel{
-        font-size: larger;
+    .linkerdeel, .rechterdeel{
+        font-size:80%;
     }
 }
 
-/*Notes to self:
-Oke hij is lelijk op die Nest Hub. Dimension is 1024 (breedte) x 600 hoogte
-landscape mode is lelijk bij bijna allemaal. Dus die moet je nog fixen dan. 
-
+/*note to self
+uhm footer fixen.
+plus footer en header aanpassen bij grotere schermen vanwege slechte kwaliteit plaatje
+uhm landscape mode nog steeds niet goed overal. 
 */
-/*landscape mode*/
-@media only screen and (orientation: landscape) and (max-width: 993px){
-    .linkerdeel{
-       width: 50%;
-       font-size: small;
-    }
-    .rechterdeel{
-        width: 50%;
-        font-size:small;
-    }
-    .img_activiteiten{
-        height:10em;
-        font-size:small;
-    }
-}
-
