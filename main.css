@@ -135,6 +135,7 @@ footer{
 /*Notes to self:
 Oke hij is lelijk op die Nest Hub. Dimension is 1024 (breedte) x 600 hoogte
 landscape mode is lelijk bij bijna allemaal. Dus die moet je nog fixen dan. 
+
 */
 /*landscape mode*/
 @media only screen and (orientation: landscape) and (max-width: 993px){
