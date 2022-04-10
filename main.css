@@ -17,16 +17,16 @@
     font-family: 'Ubuntu Mono', monospace;
 */
 *{
-    color:#FBF5EC;
+    color:#F4E6D8;
     margin: 0px;
     padding: 0px;
-}
+    }
 body{
-    background-color: #18437F;
+    background-color: #F4E6D8;
 }
 header{
     height: 3.5em;
-    background-image: url(img/spaarnwouder-poort-te-haarlem-0c5809.jpg);
+    background-image: url(img/spaarnwouderpoort.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position:relative;
@@ -34,39 +34,47 @@ header{
     font-family: 'Maven Pro', sans-serif;
     text-shadow: 2px 2px #333;
 }
-.wikkel{
-    display:block;
-}
-.linkerdeel{
-    background-color: #A16A1E;
-    float: left;
-    width: 30%;
-    height: 100vh;
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: medium;
-}
 p{
     margin: 5%;
 }
 h2{
     margin: 2%;
 }
-
-.rechterdeel{
-    background-color: #D88F2A;
-    float: right;
-    width: 70%;
+.wikkel{
+    display:block;
+    
+}
+.linkerdeel{
+    background-color: #295D92;
+    float: left;
+    width: 40%;
     height: 100vh;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: medium;
+    font-size: 3vw;
+    word-wrap:break-word;
+}
+.rechterdeel{
+    background-color: #3474B7;
+    float: right;
+    width: 60%;
+    height: 100vh;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 3vw;
     text-align: center;
+    word-wrap: break-word;
 }
 
 footer{
     height: 3.5em;
-    background-color:#061223;
+    background-color:#1A3B5D;
     font-family: 'Maven Pro', sans-serif;
     clear: both;
+    text-shadow: 2px 2px #333;
+    background-image: url(img/spaarnwouderpoort_kont.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    background-size: cover;
 }
 .img_activiteiten{
     padding: 1em;
