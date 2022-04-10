@@ -91,7 +91,7 @@ footer{
 /*grotere smartphones*/
 @media only screen and (min-width: 600px){
     .linkerdeel{
-        font-size: medium;
+        font-size: small;
     }
     .rechterdeel{
         font-size: medium;
@@ -101,7 +101,7 @@ footer{
 @media only screen and (min-width: 768px)
 {
     .linkerdeel{
-        font-size: large;
+        font-size: medium;
     }
     .rechterdeel{
         font-size: large;
@@ -110,21 +110,6 @@ footer{
         height: 13em;
     }
 }
-/*landscape mode*/
-@media only screen and (orientation: landscape) and (max-width: 993px){
-    .linkerdeel{
-       width: 30%;
-       font-size: small;
-    }
-    .rechterdeel{
-        width: 70%;
-        font-size:small;
-    }
-    .img_activiteiten{
-        height:10em;
-    }
-}
-
 /*laptop/desktop*/
 @media only screen and (min-width: 993px){
     .linkerdeel{
@@ -146,3 +131,24 @@ footer{
         font-size: larger;
     }
 }
+
+/*Notes to self:
+Oke hij is lelijk op die Nest Hub. Dimension is 1024 (breedte) x 600 hoogte
+landscape mode is lelijk bij bijna allemaal. Dus die moet je nog fixen dan. 
+*/
+/*landscape mode*/
+@media only screen and (orientation: landscape) and (max-width: 993px){
+    .linkerdeel{
+       width: 30%;
+       font-size: small;
+    }
+    .rechterdeel{
+        width: 70%;
+        font-size:1em;
+    }
+    .img_activiteiten{
+        height:10em;
+        font-size:1em;
+    }
+}
+
