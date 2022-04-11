@@ -20,6 +20,10 @@
     margin: 0px;
     padding: 0px;
 }
+html,body{
+    padding: 0px;
+    margin: 0px;
+}
 body{
     background-color: #F4E6D8;
 }
@@ -39,6 +43,9 @@ p{
 }
 h2{
     margin: 2%;
+}
+#wrapper{
+    height: 100%;
 }
 .wikkel{
     display:block;
@@ -98,13 +105,32 @@ footer{
     float: right;
     border-radius: 15%;
 }
-
+#hansklok{
+    display:none;
+}
 @media only screen and (min-width: 992px){
     .img_activiteiten{
         height: 50%;
     }
     .linkerdeel, .rechterdeel{
-        font-size:80%;
+        font-size:large;
+    }
+    #hansklok{
+        width:30%;
+        display:block;
+        margin-left: 30%;
+        margin-right: 70%;
+    }
+    footer{
+        background-image: none;
+        background-image: linear-gradient(#2D649E, #122940 );
+    }
+    header{
+        background-image: none;
+        background-image: linear-gradient(#122940, #2D649E);
+    }
+    #footertekst{
+        margin:0px;
     }
 }
 
