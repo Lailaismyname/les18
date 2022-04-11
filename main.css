@@ -113,14 +113,9 @@ footer{
         height: 50%;
     }
     .linkerdeel, .rechterdeel{
-        font-size:small;
+        font-size: medium;
     }
-    #hansklok{
-        width:50%;
-        display:block;
-        margin-left: 25%;
-        margin-right: 75%;
-    }
+
     footer{
         background-image: none;
         background-image: linear-gradient(#2D649E, #122940 );
@@ -130,9 +125,18 @@ footer{
         height: 80px;
         background-image: none;
         background-image: linear-gradient(#122940, #2D649E);
+        text-align: center;
     }
     #footertekst{
         margin:0px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #hansklok{
+        width:50%;
+        display:block;
+        margin-left: 25%;
+        margin-right: 75%;
     }
 }
 
