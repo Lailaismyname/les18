@@ -1,27 +1,39 @@
-/* verklaar classes voor de columns van fluid grid */
-.col-1{width:8.33%;}
-.col-2{width:16.66%;}
-.col-3{width:25%;}
-.col-4{width:33.33%;}
-.col-5{width:41.66%;}
-.col-6{width:50%;}
-.col-7{width:58.33%;}
-.col-8{width:66.66%;}
-.col-9{width:75%;}
-.col-10{width:83.33%;}
-.col-11{width:91.66%;}
-.col-12{width:100%;}
+[class*="col-"]  {
+    width: 100%;
+}
+@media only screen and (min-width: 768px)  {
+    [class*="col-"]  {
+        float: left;
+        padding: 15px;
+    }
+    .col-1{width:8.33%;}
+    .col-2{width:16.66%;}
+    .col-3{width:25%;}
+    .col-4{width:33.33%;}
+    .col-5{width:41.66%;}
+    .col-6{width:50%;}
+    .col-7{width:58.33%;}
+    .col-8{width:66.66%;}
+    .col-9{width:75%;}
+    .col-10{width:83.33%;}
+    .col-11{width:91.66%;}
+    .col-12{width:100%;}
+
+    .linkerdeel .rechterdeel{
+        height: 100vh;
+    }
+}
 
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 body{
     background-color: #F4E6D8;
-    display: grid;
 }
-header{
+
+.header{
     color:#FBF6F1;
     height: 200px;
     background-image: url(img/spaarnwouderpoort.jpg);
@@ -32,57 +44,22 @@ header{
     font-family: 'Maven Pro', sans-serif;
     text-shadow: 2px 2px #333;
 }
-p{
-    margin: 5%;
-    font-size: small;
-}
-h2{
-    margin: 2%;
-    text-align: center;
-}
-#wrapper{
-    height: 100%;
-}
-.wikkel{
-    display:inline-block;
-}
-.feitjes{
-    padding: 2em;
+.linkerdeel ul{
     list-style-type: none;
-    line-height: 2em;
-}
-.linkerdeel{
-    padding-top:5%;
-    background-color: #E7C8A9;
-    color:#553718;
-    float: left;
-    width: 40%;
-    height: 100vh;
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 60%;
-    word-wrap:break-word;
-}
-    #hofjes{
-    height: 40%;
-    }
-    #vdpigge{
-    height:60%;
-    }
-    .rechterdeel{
-    padding-top: 5%;
-    background-color: #F1DFCD;
-    color:#553718;
-    float: right;
-    width: 60%;
-    height:100vh;
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 60%;
-    text-align: center;
-    word-wrap: break-word;
 }
 
+.linkerdeel{
+    background-color: #E7C8A9;
+    color:#553718;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.rechterdeel{
+    background-color: #F1DFCD;
+    color:#553718;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+}
 footer{
-    height: 5%;
     background-color:#1A3B5D;
     color:#FBF6F1;
     font-family: 'Maven Pro', sans-serif;
@@ -97,74 +74,12 @@ footer{
     background-size: cover;
     text-align: center;
 }
+
 .img_activiteiten{
-    width: 50%;
+    width: 20%;
     padding: 4%;
     border-radius: 25%;
     float: right;
     
 }
-#hansklok{
-    display:none;
-}
 
-@media only screen and (min-width: 992px){
-    .linkerdeel, .rechterdeel{
-        font-size: medium;
-    }
-    footer{
-        background-image: none;
-        background-image: linear-gradient(#2D649E, #122940 );
-        height:80px;
-    }
-    header{
-        height: 80px;
-        background-image: none;
-        background-image: linear-gradient(#122940, #2D649E);
-        text-align: center;
-    }
-    .img_activiteiten{
-        width: 200px;
-    }
-}
-@media only screen and (min-width: 1200px){
-    #hansklok{
-        width:50%;
-        display:block;
-        margin-left: 25%;
-        margin-right: 75%;
-    }
-}
-/*extra kleine schermen*/
-@media only screen and (max-width: 300px)
-{
-    .img_activiteiten{
-        display:none;
-    }
-    h2{
-        font-size: 6px;
-    }
-    .linkerdeel{
-        font-size: 8px;
-    }
-    .rechterdeel{
-        font-size: 4px;
-    }
-}
-/*landscape*/
-@media screen and (orientation: landscape){
-    .img_activiteiten{
-        width:20%;
-    }
-    footer{
-        height: 20%;
-        max-height: 120px;
-    }
-    h2{
-        margin: 0px;
-        padding: 0px;
-    }
-    #vdpigge{
-        padding-top: 5%;
-    }
-}
